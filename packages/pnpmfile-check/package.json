@@ -1,6 +1,6 @@
 {
   "name": "pnpmfile-check",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "babel-register": "^6.26.0",
     "globby": "^8.0.1",

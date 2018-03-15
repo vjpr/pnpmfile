@@ -1,6 +1,6 @@
 {
   "name": "@pnpmfile/create-react-native-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "pnpmfile-read-package-json": "^0.0.1"
   }
