@@ -1,0 +1,24 @@
+0 silly input [ 'globby' ]
+1 silly flags { _: [ 'add' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   scope: 'pnpmfile',
+1 silly flags   args: [ 'globby' ] }
+2 verbose rootPath /Users/Vaughan/dev-live/pnpmfile
+3 info version 2.9.0
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/Vaughan/dev-live/pnpmfile/VERSION
+7 info versioning independent
+8 info scope pnpmfile
+9 error EPACKAGES Errored while collecting packages and package graph
+10 error Error: No packages found that match scope 'pnpmfile'
+10 error     at Function.filterPackages (/Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/lerna/2.9.0/node_modules/lerna/lib/PackageUtilities.js:226:17)
+10 error     at AddCommand.runPreparations (/Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/lerna/2.9.0/node_modules/lerna/lib/Command.js:328:60)
+10 error     at /Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/lerna/2.9.0/node_modules/lerna/lib/Command.js:204:18
+10 error     at new Promise (<anonymous>)
+10 error     at AddCommand.run (/Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/lerna/2.9.0/node_modules/lerna/lib/Command.js:188:14)
+10 error     at Object.handler (/Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/lerna/2.9.0/node_modules/lerna/lib/commands/AddCommand.js:77:14)
+10 error     at Object.self.runCommand (/Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/yargs/8.0.2/node_modules/yargs/lib/command.js:233:22)
+10 error     at Object.Yargs.self._parseArgs (/Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/yargs/8.0.2/node_modules/yargs/yargs.js:990:30)
+10 error     at Object.Yargs.self.parse (/Users/Vaughan/nvm/versions/node/v8.9.0/pnpm-global/1/node_modules/.registry.npmjs.org/yargs/8.0.2/node_modules/yargs/yargs.js:532:23)
