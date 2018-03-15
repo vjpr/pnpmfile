@@ -3,5 +3,8 @@
   "version": "0.0.2-0",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "pnpmfile-read-package-json": "^0.0.1"
   }
 }
