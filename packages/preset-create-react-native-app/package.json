@@ -1,6 +1,6 @@
 {
   "name": "@pnpmfile/preset-create-react-native-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "module": "index.js",
   "modules": {
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@pnpmfile/expo": "^0.1.0",
-    "@pnpmfile/react-native": "^0.1.0",
-    "pnpmfile-read-package-json": "^0.1.0"
+    "@pnpmfile/react-native": "^0.1.1",
+    "pnpmfile-read-package-json": "^0.1.1"
   },
   "publishConfig": {
     "access": "public"
