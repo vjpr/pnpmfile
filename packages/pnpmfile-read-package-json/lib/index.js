@@ -8,6 +8,7 @@ exports.default = function (entries) {
   return function (pkg) {
     for (const [key, entry] of Object.entries(entries)) {
       let { name, version } = (0, _parsePackageName2.default)(key);
+      if (version === '') version = '*';
       if (key === '<root>') {
         name = getRootPackageName();
       }
