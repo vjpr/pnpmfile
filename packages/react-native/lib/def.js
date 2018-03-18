@@ -16,7 +16,7 @@ exports.default = {
       //'metro-resolver': '~/dev-live/metro/.dev/metro-resolver-pnpm-0.28.0-vjpr.2.tgz',
     }
   },
-  'metro-pnpm': {
+  'metro-pnpm@0.24.7-vjpr.1': {
     dependencies: {
       'babel-plugin-transform-flow-strip-types': '6',
       'babel-plugin-transform-object-rest-spread': '6',

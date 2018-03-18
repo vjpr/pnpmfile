@@ -8,6 +8,8 @@ exports.default = function (entries) {
   return function (pkg) {
     for (const [key, entry] of Object.entries(entries)) {
       let { name, version } = (0, _parsePackageName2.default)(key);
+      // TODO(vjpr): '' is a valid range I think according to https://semver.npmjs.com/.
+      // TODO(vjpr): '' and '*' never match pre-release versions. Should we introduce syntax to match all versions including pre-release?
       if (version === '') version = '*';
       if (key === '<root>') {
         name = getRootPackageName();
