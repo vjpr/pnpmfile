@@ -1,0 +1,1 @@
+{"version":3,"sources":["../index.js"],"names":["pkg","def"],"mappings":";;;;;;kBAAe,UAASA,GAAT,EAAc,CAE5B,C;;AAED,MAAMC,MAAM,EAAZ","file":"index.js","sourcesContent":["export default function(pkg) {\n\n}\n\nconst def = {\n\n}\n"]}

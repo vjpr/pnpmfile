@@ -1,0 +1,1 @@
+{"version":3,"sources":["../def.js"],"names":["dependencies","expo"],"mappings":";;;;;kBAAe;;AAEb,0BAAwB;AACtBA,kBAAc;AACZC,YAAM;AADM;AADQ;;AAFX,C","file":"def.js","sourcesContent":["export default {\n\n  'react-native-scripts': {\n    dependencies: {\n      expo: '*',\n    },\n  },\n\n}\n"]}

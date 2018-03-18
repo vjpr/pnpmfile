@@ -1,0 +1,10 @@
+{
+  "name": "@pnpmfile/expo",
+  "version": "0.0.0",
+  "dependencies": {
+
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -2,9 +2,12 @@
   "name": "pnpmfile",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm run build-all && lerna publish",
+    "build-all": "lerna exec -- \\$LERNA_ROOT_PATH/scripts/build.sh",
     "build-check": "packages/pnpmfile-check/scripts/build.js"
   },
   "keywords": [],
@@ -12,5 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "babel-preset-env": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
   }
 }

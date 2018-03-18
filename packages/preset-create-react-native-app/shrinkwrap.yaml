@@ -1,0 +1,5 @@
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 4
+shrinkwrapVersion: 3
+specifiers:
+  pnpmfile-read-package-json: ^0.0.1

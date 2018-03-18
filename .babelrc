@@ -1,5 +1,26 @@
 {
   "presets": [
-    "env"
-  ]
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "cjs": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "8.0.0"
+            }
+          }
+        ]
+      ]
+    }
+  }
 }

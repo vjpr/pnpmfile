@@ -29,7 +29,7 @@ export default function(entries) {
           ]
           const originalPkg = _.cloneDeep(pkg)
           const obj = _.pick(entry, allowed)
-          _.merge(pkg, obj)
+          _.merge(pkg, obj) // Mutates!
           const before = _.pick(originalPkg, allowed)
           const after = _.pick(pkg, allowed)
           if (shouldPrintDiff) printDiff(pkg, before, after)

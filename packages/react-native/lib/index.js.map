@@ -1,0 +1,1 @@
+{"version":3,"sources":["../index.js"],"names":["pkg"],"mappings":";;;;;;kBAGe,UAASA,GAAT,EAAc;AAC3B,wDAAYA,GAAZ;AACD,C;;AALD;;;;AACA","file":"index.js","sourcesContent":["import update from 'pnpmfile-read-package-json'\nimport def from './def'\n\nexport default function(pkg) {\n  update(def)(pkg)\n}\n"]}

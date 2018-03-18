@@ -1,4 +1,6 @@
 import update from 'pnpmfile-read-package-json'
+import reactNative from '@pnpmfile/react-native'
+import expo from '@pnpmfile/expo'
 import def from './def'
 
 // NOTE: To see crna packager errors you must add `console.log(JSON.stringify(msg, null, 2))` to `this._handlePackagerEvent` here:
@@ -6,14 +8,6 @@ import def from './def'
 
 export default function(pkg) {
   update(def)(pkg)
+  reactNative(pkg)
+  expo(pkg)
 }
-
-//function createReactNativeApp(pkg) {
-//  const pjson = require('./package.json')
-//  if (pkg.name === pjson.name) {
-//    Object.assign(pkg.dependencies, {
-//      'babel-preset-expo': '^4',
-//      'babel-plugin-transform-react-jsx-source': '6',
-//    })
-//  }
-//}

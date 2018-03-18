@@ -21,6 +21,7 @@ const packages = glob.sync('packages/*', {
     'packages/pnpmfile-check',
     'packages/pnpmfile-read-package-json',
     '**/node_modules/**',
+    // TODO(vjpr): Starts with `preset-`.
   ],
 })
 console.log({packages})

@@ -1,15 +1,20 @@
-export default {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
   'react-native@0.52.0': {
     dependencies: {
       metro: 'npm:metro-pnpm@0.24.7-vjpr.1',
-      uuid: '*', // Libraries/Blob/Blob.js
-    },
+      uuid: '*' // Libraries/Blob/Blob.js
+    }
   },
   'react-native@0.54.2': {
     dependencies: {
-      'metro-resolver': 'npm:metro-pnpm@0.28.0-vjpr.2',
+      'metro-resolver': 'npm:metro-pnpm@0.28.0-vjpr.2'
       //'metro-resolver': '~/dev-live/metro/.dev/metro-resolver-pnpm-0.28.0-vjpr.2.tgz',
-    },
+    }
   },
   'metro-pnpm': {
     dependencies: {
@@ -21,12 +26,13 @@ export default {
       'babel-template': '6',
       resolve: '*',
       xtend: '*',
-      errno: '*',
-    },
+      errno: '*'
+    }
   },
   'metro-core': {
     dependencies: {
-      wordwrap: '*',
-    },
-  },
-}
+      wordwrap: '*'
+    }
+  }
+};
+//# sourceMappingURL=def.js.map

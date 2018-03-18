@@ -1,0 +1,1 @@
+{"version":3,"sources":["../index.js"],"names":["require","module","exports"],"mappings":";;AAAAA,QAAQ,gBAAR;AACAC,OAAOC,OAAP,GAAiBF,QAAQ,QAAR,CAAjB","file":"index.js","sourcesContent":["require('babel-register')\nmodule.exports = require('./main')\n"]}
