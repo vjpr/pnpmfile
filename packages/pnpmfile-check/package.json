@@ -1,12 +1,12 @@
 {
   "name": "pnpmfile-check",
-  "version": "0.0.2-0",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "dependencies": {
     "babel-register": "^6.26.0",
     "globby": "^8.0.1",
     "lodash": "^4.17.5",
-    "pnpmfile-read-package-json": "^0.0.2-0",
+    "pnpmfile-read-package-json": "^0.1.0",
     "try-resolve": "^1.0.1"
   },
   "devDependencies": {

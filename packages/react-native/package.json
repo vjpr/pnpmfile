@@ -1,11 +1,11 @@
 {
   "name": "@pnpmfile/react-native",
-  "version": "0.0.3-0",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "pnpmfile-read-package-json": "^0.0.2-0"
+    "pnpmfile-read-package-json": "^0.1.0"
   }
 }
