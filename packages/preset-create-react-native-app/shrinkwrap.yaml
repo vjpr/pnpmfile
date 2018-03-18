@@ -2,4 +2,6 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 4
 shrinkwrapVersion: 3
 specifiers:
+  '@pnpmfile/expo': ^0.0.0
+  '@pnpmfile/react-native': ^0.0.2-0
   pnpmfile-read-package-json: ^0.0.1

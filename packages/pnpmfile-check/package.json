@@ -1,6 +1,7 @@
 {
   "name": "pnpmfile-check",
   "version": "0.0.1",
+  "main": "lib/index.js",
   "dependencies": {
     "babel-register": "^6.26.0",
     "globby": "^8.0.1",

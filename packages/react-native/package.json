@@ -1,6 +1,7 @@
 {
   "name": "@pnpmfile/react-native",
   "version": "0.0.2-0",
+  "main": "lib/index.js",
   "publishConfig": {
     "access": "public"
   },

@@ -1,6 +1,7 @@
 {
   "name": "@pnpmfile/expo",
   "version": "0.0.0",
+  "main": "lib/index.js",
   "dependencies": {
 
   },

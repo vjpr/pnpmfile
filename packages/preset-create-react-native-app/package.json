@@ -1,8 +1,9 @@
 {
   "name": "@pnpmfile/preset-create-react-native-app",
   "version": "0.0.2-0",
+  "main": "lib/index.js",
+  "module": "index.js",
   "modules": {
-    "main": "index.js",
     "babel": "^6",
     "root": {
       "src": "",
