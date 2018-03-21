@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = {
 
   'react-native-scripts': {
-    dependencies: {
+    peerDependencies: {
       expo: '*'
     }
   }
