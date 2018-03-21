@@ -1,7 +1,7 @@
 export default {
 
   'react-native-scripts': {
-    dependencies: {
+    peerDependencies: {
       expo: '*',
     },
   },

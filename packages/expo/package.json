@@ -4,5 +4,8 @@
   "main": "lib/index.js",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "pnpmfile-read-package-json": "^0.1.1"
   }
 }
