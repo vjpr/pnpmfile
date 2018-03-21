@@ -17,14 +17,15 @@ export default function(entries) {
       let {name, version} = parsePackageName(key)
       // TODO(vjpr): '' is a valid range I think according to https://semver.npmjs.com/.
       // TODO(vjpr): '' and '*' never match pre-release versions. Should we introduce syntax to match all versions including pre-release?
-      if (version === '') version = '*'
+      let matchAll = false
+      if (version === '') matchAll = true
       if (key === '<root>') {
         name = getRootPackageName()
       }
 
       // TODO(vjpr): We need to find the best version to replace. Maybe sort by semver beforehand.
       if (name === pkg.name) {
-        if (semver.satisfies(pkg.version, version)) {
+        if (matchAll || semver.satisfies(pkg.version, version)) {
           const allowed = [
             'dependencies',
             'devDependencies',
