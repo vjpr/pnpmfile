@@ -1,0 +1,1 @@
+{"version":3,"sources":["../index.js"],"names":["module","exports","peerDependencies","expo"],"mappings":";;AAAAA,OAAOC,OAAP,GAAiB;;AAEf,0BAAwB;AACtBC,sBAAkB;AAChBC,YAAM;AADU;AADI;;AAFT,CAAjB","file":"index.js","sourcesContent":["module.exports = {\n\n  'react-native-scripts': {\n    peerDependencies: {\n      expo: '*',\n    },\n  },\n\n}\n"]}
