@@ -11,8 +11,9 @@ const debug = Debug('pnpmfile-read-package-json')
 // Using `debug`.
 const shouldPrintDiff = true
 
-export default function(entries) {
-  return function(pkg) {
+module.exports = function(entries) {
+  return function(pkg, rootPkg) {
+    if (!rootPkg) throw new Error(`You must pass the 'rootPkg' arg to 'pnpmfile-read-package-json'`)
     for (const [key, entry] of Object.entries(entries)) {
       let {name, version} = parsePackageName(key)
       // TODO(vjpr): '' is a valid range I think according to https://semver.npmjs.com/.
@@ -20,7 +21,8 @@ export default function(entries) {
       let matchAll = false
       if (version === '') matchAll = true
       if (key === '<root>') {
-        name = getRootPackageName()
+        //name = getRootPackageName()
+        name = rootPkg
       }
 
       // TODO(vjpr): We need to find the best version to replace. Maybe sort by semver beforehand.
@@ -46,10 +48,12 @@ export default function(entries) {
   }
 }
 
-function getRootPackageName() {
-  const pjson = require(join(process.cwd(), 'package.json'))
-  return pjson.name
-}
+//function getRootPackageName() {
+//  // NOTE: `process.cwd()` won't be correct when running `pnpm recursive link`.
+//  //   Instead we just pass it in for now.
+//  const pjson = require(join(process.cwd(), 'package.json'))
+//  return pjson.name
+//}
 
 function printDiff(pkg, before, after) {
   const delta = diffJson(before, after)

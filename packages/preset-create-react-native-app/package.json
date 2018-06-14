@@ -11,9 +11,10 @@
     }
   },
   "dependencies": {
+    "@pnpmfile/create-react-native-app": "^0.1.0",
     "@pnpmfile/expo": "^0.1.2",
     "@pnpmfile/react-native": "^0.1.2",
-    "pnpmfile-read-package-json": "^0.1.2"
+    "deepmerge": "^2.1.1"
   },
   "publishConfig": {
     "access": "public"

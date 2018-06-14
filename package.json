@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npm run build-all && lerna publish",
     "build-all": "lerna exec -- \\$LERNA_ROOT_PATH/scripts/build.sh",
+    "build-all-watch": "lerna exec --parallel -- \\$LERNA_ROOT_PATH/scripts/build-watch.sh",
     "build-check": "packages/pnpmfile-check/scripts/build.js"
   },
   "keywords": [],

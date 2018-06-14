@@ -1,1 +1,0 @@
-{"version":3,"sources":["../def.js"],"names":["peerDependencies","expo"],"mappings":";;;;;kBAAe;;AAEb,0BAAwB;AACtBA,sBAAkB;AAChBC,YAAM;AADU;AADI;;AAFX,C","file":"def.js","sourcesContent":["export default {\n\n  'react-native-scripts': {\n    peerDependencies: {\n      expo: '*',\n    },\n  },\n\n}\n"]}

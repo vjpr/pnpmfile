@@ -1,7 +1,21 @@
+dependencies:
+  '@pnpmfile/create-react-native-app': 'link:../create-react-native-app'
+  '@pnpmfile/expo': 'link:../expo'
+  '@pnpmfile/react-native': 'link:../react-native'
+  deepmerge: 2.1.1
+  pnpmfile-read-package-json: 'link:../pnpmfile-read-package-json'
+packages:
+  /deepmerge/2.1.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-urQxA1smbLZ2cBbXbaYObM1dJ82aJ2H57A1C/Kklfh/ZN1bgH4G/n5KWhdNfOK11W98gqZfyYj7W4frJJRwA2w==
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 4
+shrinkwrapMinorVersion: 7
 shrinkwrapVersion: 3
 specifiers:
-  '@pnpmfile/expo': ^0.1.1
-  '@pnpmfile/react-native': ^0.1.1
-  pnpmfile-read-package-json: ^0.1.1
+  '@pnpmfile/create-react-native-app': ^0.1.0
+  '@pnpmfile/expo': ^0.1.2
+  '@pnpmfile/react-native': ^0.1.2
+  deepmerge: ^2.1.1

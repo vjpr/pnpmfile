@@ -2,6 +2,7 @@ dependencies:
   babel-register: 6.26.0
   globby: 8.0.1
   lodash: 4.17.5
+  pnpmfile-read-package-json: 'link:../pnpmfile-read-package-json'
   try-resolve: 1.0.1
 devDependencies:
   semver: 5.5.0
@@ -1225,11 +1226,12 @@ packages:
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 4
+shrinkwrapMinorVersion: 7
 shrinkwrapVersion: 3
 specifiers:
   babel-register: ^6.26.0
   globby: ^8.0.1
   lodash: ^4.17.5
+  pnpmfile-read-package-json: ^0.1.2
   semver: ^5.5.0
   try-resolve: ^1.0.1

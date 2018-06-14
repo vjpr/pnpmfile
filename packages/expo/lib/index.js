@@ -1,20 +1,43 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+module.exports = {
 
-exports.default = function (pkg) {
-  (0, _pnpmfileReadPackageJson2.default)(_def2.default)(pkg);
+  '<root>': {
+    dependencies: {
+      /*
+        pnpm ls babel-preset-expo
+         ├─┬ expo@25.0.0
+        │ └── babel-preset-expo@4.0.0
+        └─┬ react-native-scripts@1.11.1
+          └─┬ expo@25.0.0
+            └── babel-preset-expo@4.0.0
+      */
+      'babel-preset-expo': '^4',
+      'babel-plugin-transform-react-jsx-source': '6'
+    }
+  },
+
+  expo: {
+    dependencies: {
+      fbjs: '^0.8.16', // expo/src/Notifications.js
+      lodash: '*',
+      'json-schema-traverse': '*'
+    }
+  },
+
+  // @expo/vector-icons@6.3.1
+  '@expo/vector-icons': {
+    dependencies: {
+      'prop-types': '*'
+    }
+  },
+
+  // react-native-gesture-handler@1.0.0-alpha.39
+  'react-native-gesture-handler': {
+    dependencies: {
+      fbjs: '^0.8.16'
+    }
+  }
+
 };
-
-var _pnpmfileReadPackageJson = require('pnpmfile-read-package-json');
-
-var _pnpmfileReadPackageJson2 = _interopRequireDefault(_pnpmfileReadPackageJson);
-
-var _def = require('./def');
-
-var _def2 = _interopRequireDefault(_def);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 //# sourceMappingURL=index.js.map
